@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amma's Pickles – Homemade with Love</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <div class="logo-icon">
+        <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="19" cy="24" rx="11" ry="13" fill="#5a7a3a"/>
+          <rect x="14" y="10" width="10" height="6" rx="3" fill="#7a9a52"/>
+          <ellipse cx="19" cy="10" rx="5" ry="2.5" fill="#4a6a2a"/>
+          <path d="M13 16 Q10 10 14 7 Q16 12 19 10 Q22 12 24 7 Q28 10 25 16" fill="#3d5c20"/>
+          <ellipse cx="15" cy="22" rx="2" ry="3" fill="#7ab648" opacity="0.5"/>
+          <ellipse cx="23" cy="26" rx="1.5" ry="2.5" fill="#7ab648" opacity="0.4"/>
+        </svg>
+      </div>
+      <div class="logo-text">
+        <span class="logo-ap">AP</span>
+        <span class="logo-name">Amma's Pickles</span>
+      </div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#order">Order Now</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" onclick="toggleMenu()">About</a>
+    <a href="#products" onclick="toggleMenu()">Products</a>
+    <a href="#order" onclick="toggleMenu()">Order Now</a>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-bg-shapes">
+      <div class="shape shape1"></div>
+      <div class="shape shape2"></div>
+      <div class="shape shape3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">🌿 100% Natural &amp; Homemade</div>
+      <h1>Taste the Love in<br/><span class="hero-highlight">Every Jar</span></h1>
+      <p>Traditional recipes passed down through generations. No preservatives. No shortcuts. Just pure, authentic homemade goodness crafted with love.</p>
+      <div class="hero-btns">
+        <a href="#products" class="btn btn-primary">Explore Pickles 🫙</a>
+        <a href="#order" class="btn btn-outline">Order Now</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">50+</span><span class="stat-label">Years Recipe</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">6</span><span class="stat-label">Varieties</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Natural</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="jar-showcase">
+        <div class="jar-ring jar-ring1"></div>
+        <div class="jar-ring jar-ring2"></div>
+        <div class="jar-main">
+          <svg width="180" height="220" viewBox="0 0 180 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="55" y="30" width="70" height="20" rx="6" fill="#8B7355"/>
+            <rect x="50" y="45" width="80" height="8" rx="2" fill="#A0896A"/>
+            <path d="M35 60 Q30 200 90 210 Q150 200 145 60 Z" fill="#C8A96E" opacity="0.3"/>
+            <path d="M35 60 Q30 200 90 210 Q150 200 145 60 Z" fill="#5a7a3a"/>
+            <path d="M45 80 Q42 180 90 190 Q138 180 135 80 Z" fill="#4a6a2a"/>
+            <ellipse cx="90" cy="105" rx="18" ry="18" fill="#7ab648" opacity="0.6"/>
+            <ellipse cx="65" cy="130" rx="12" ry="12" fill="#e8a020" opacity="0.7"/>
+            <ellipse cx="115" cy="125" rx="10" ry="10" fill="#c0392b" opacity="0.6"/>
+            <ellipse cx="80" cy="155" rx="14" ry="10" fill="#7ab648" opacity="0.5"/>
+            <ellipse cx="108" cy="155" rx="10" ry="12" fill="#e8a020" opacity="0.5"/>
+            <path d="M35 60 Q90 75 145 60" stroke="#8B7355" stroke-width="4" fill="none"/>
+            <rect x="55" y="30" width="70" height="20" rx="6" fill="#8B7355" opacity="0.6"/>
+            <text x="90" y="45" text-anchor="middle" fill="#fff" font-size="11" font-family="serif" font-weight="bold">Amma's</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-tag">Our Story</div>
+      <h2 class="section-title">Made with Generations<br/>of Love & Tradition</h2>
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="about-icon-wrap">👵</div>
+          <h3>Grandmother's Recipe</h3>
+          <p>Every jar is made using recipes that have been in our family for over 50 years. The same love, the same authentic taste your grandmother made.</p>
+        </div>
+        <div class="about-card about-card-featured">
+          <div class="about-icon-wrap">🌿</div>
+          <h3>100% Natural</h3>
+          <p>No artificial preservatives or colors. We use only fresh vegetables, cold-pressed oils, and hand-ground spices sourced locally.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon-wrap">🏡</div>
+          <h3>Small Batch Made</h3>
+          <p>Every batch is prepared in small quantities at home to ensure the highest quality and freshness packed into every single jar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS SECTION -->
+  <section class="products" id="products">
+    <div class="container">
+      <div class="section-tag">Our Collection</div>
+      <h2 class="section-title">Handcrafted Pickle Varieties</h2>
+      <p class="section-subtitle">All pickles are handmade in small batches and packed fresh to order</p>
+      <div class="products-grid">
+
+        <div class="product-card">
+          <div class="product-img mango">
+            <span class="product-emoji-big">🥭</span>
+          </div>
+          <div class="product-info">
+            <div class="product-badge bestseller">Bestseller</div>
+            <h3>Mango Pickle</h3>
+            <p>Classic raw mango pickle with mustard seeds and red chili. A timeless Indian favourite passed down through generations.</p>
+            <div class="product-footer">
+              <span class="price">₹180 <small>/ 250g</small></span>
+              <button class="order-btn" onclick="document.getElementById('pickle').value='mango'; document.getElementById('order').scrollIntoView({behavior:'smooth'})">Order →</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img lemon">
+            <span class="product-emoji-big">🍋</span>
+          </div>
+          <div class="product-info">
+            <div class="product-badge popular">Popular</div>
+            <h3>Lemon Pickle</h3>
+            <p>Tangy sun-dried lemon pickle with a perfect blend of spices. Goes beautifully with rice, roti, and everything in between.</p>
+            <div class="product-footer">
+              <span class="price">₹150 <small>/ 250g</small></span>
+              <button class="order-btn" onclick="document.getElementById('pickle').value='lemon'; document.getElementById('order').scrollIntoView({behavior:'smooth'})">Order →</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img chilli">
+            <span class="product-emoji-big">🌶️</span>
+          </div>
+          <div class="product-info">
+            <div class="product-badge spicy">Spicy 🔥</div>
+            <h3>Green Chilli Pickle</h3>
+            <p>Bold and fiery green chilli pickle for those who love an extra kick. Not for the faint-hearted!</p>
+            <div class="product-footer">
+              <span class="price">₹160 <small>/ 250g</small></span>
+              <button class="order-btn" onclick="document.getElementById('pickle').value='chilli'; document.getElementById('order').scrollIntoView({behavior:'smooth'})">Order →</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img garlic">
+            <span class="product-emoji-big">🧄</span>
+          </div>
+          <div class="product-info">
+            <div class="product-badge new">New</div>
+            <h3>Garlic Pickle</h3>
+            <p>Rich and aromatic garlic pickle slow-cooked in sesame oil. Deep, bold flavour that elevates any meal.</p>
+            <div class="product-footer">
+              <span class="price">₹200 <small>/ 250g</small></span>
+              <button class="order-btn" onclick="document.getElementById('pickle').value='garlic'; document.getElementById('order').scrollIntoView({behavior:'smooth'})">Order →</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img gongura">
+            <span class="product-emoji-big">🫚</span>
+          </div>
+          <div class="product-info">
+            <div class="product-badge special">Andhra Special</div>
+            <h3>Gongura Pickle</h3>
+            <p>Authentic Andhra-style sorrel leaves pickle. Tangy, spicy, and absolutely irresistible for every Telugu household.</p>
+            <div class="product-footer">
+              <span class="price">₹190 <small>/ 250g</small></span>
+              <button class="order-btn" onclick="document.getElementById('pickle').value='gongura'; document.getElementById('order').scrollIntoView({behavior:'smooth'})">Order →</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img mixed">
+            <span class="product-emoji-big">🥕</span>
+          </div>
+          <div class="product-info">
+            <div class="product-badge family">Family Pack</div>
+            <h3>Mixed Vegetable Pickle</h3>
+            <p>A colourful mix of carrots, raw mango, and cauliflower pickled together in cold-pressed mustard oil.</p>
+            <div class="product-footer">
+              <span class="price">₹170 <small>/ 250g</small></span>
+              <button class="order-btn" onclick="document.getElementById('pickle').value='mixed'; document.getElementById('order').scrollIntoView({behavior:'smooth'})">Order →</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ORDER SECTION -->
+  <section class="order" id="order">
+    <div class="container">
+      <div class="section-tag">Place an Order</div>
+      <h2 class="section-title">Order Fresh to Your Door</h2>
+      <p class="section-subtitle">Fill in your details and we will call you within 24 hours to confirm</p>
+
+      <div class="form-wrapper">
+        <form class="order-form" id="orderForm">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" placeholder="Enter your full name"/>
+              <span class="error" id="nameError">Please enter your name</span>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="text" id="phone" placeholder="10-digit phone number"/>
+              <span class="error" id="phoneError">Please enter a valid 10-digit number</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="text" id="email" placeholder="Enter your email address"/>
+            <span class="error" id="emailError">Please enter a valid email address</span>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="pickle">Select Pickle</label>
+              <select id="pickle">
+                <option value="">-- Choose a pickle --</option>
+                <option value="mango">🥭 Mango Pickle – ₹180</option>
+                <option value="lemon">🍋 Lemon Pickle – ₹150</option>
+                <option value="chilli">🌶️ Green Chilli Pickle – ₹160</option>
+                <option value="garlic">🧄 Garlic Pickle – ₹200</option>
+                <option value="gongura">🫚 Gongura Pickle – ₹190</option>
+                <option value="mixed">🥕 Mixed Vegetable Pickle – ₹170</option>
+              </select>
+              <span class="error" id="pickleError">Please select a pickle variety</span>
+            </div>
+            <div class="form-group">
+              <label for="quantity">Quantity (jars)</label>
+              <select id="quantity">
+                <option value="1">1 jar</option>
+                <option value="2">2 jars</option>
+                <option value="3">3 jars</option>
+                <option value="4">4 jars</option>
+                <option value="5">5 jars (bulk discount!)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="address">Delivery Address</label>
+            <textarea id="address" rows="3" placeholder="Enter your complete delivery address with pincode"></textarea>
+            <span class="error" id="addressError">Please enter your delivery address</span>
+          </div>
+
+          <button type="button" class="submit-btn" onclick="validateForm()">
+            Place My Order 🫙
+          </button>
+
+          <div class="success-msg" id="successMsg">
+            <span>✅</span>
+            <div>
+              <strong>Order Placed Successfully!</strong>
+              <p>We will call you within 24 hours to confirm your order. Thank you for choosing Amma's Pickles!</p>
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <svg width="32" height="32" viewBox="0 0 38 38" fill="none">
+          <ellipse cx="19" cy="24" rx="11" ry="13" fill="#7ab648"/>
+          <rect x="14" y="10" width="10" height="6" rx="3" fill="#9aba6a"/>
+          <path d="M13 16 Q10 10 14 7 Q16 12 19 10 Q22 12 24 7 Q28 10 25 16" fill="#5a8a30"/>
+        </svg>
+        <span>Amma's Pickles</span>
+      </div>
+      <p>Made with love since 1975 🫙</p>
+      <div class="footer-links">
+        <span>📞 +91 98765 43210</span>
+        <span>📧 ammaspickles@gmail.com</span>
+      </div>
+      <p class="footer-copy">© 2026 Amma's Pickles. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+```
